@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts --> 
+    <!-- Titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <!-- Textos -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">  -->
+
+    
+    <title>Proyecto-principal</title>
+</head>
+<body class="grid-container">
+    <header class="grid-item grid-uno"> 
+        <div class="menu">
+            <a href="index.html"><img src="./src/assets/img/logo.png" alt="Logo" class="logo"></a>
+            <nav>
+                <ul class='lista-superior'>
+                    <li class ='elemento-li'><a href="./src/pages/lugares.html">Lugares</a></li>
+                    <li class ='elemento-li'><a href="#nosotros">Nosotros</a></li>
+                    <li class ='elemento-li'><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+    <div class="grid-item grid-dos">
+    <section>
+        <video src="./src/assets/video/video-tn.mp4" controls autoplay muted loop width="80%" height="350px" class="video"></video>
+    </section>
+    <section>
+        
+        <!--Carrusel de imagenes -->
+    <div class="carrusel">
+        <div class="texto-carrusel">
+        <a href="./src/pages/lugares.html"><img src="./src/assets/img/carrusel/carrusel1.png" alt="Lugar-1"></a>
+        <a href="./src/pages/lugares.html"><img src="./src/assets/img/carrusel/carrusel2.png" alt="Lugar-2"></a>
+        <a href="./src/pages/lugares.html"><img src="./src/assets/img/carrusel/carrusel3.png" alt="Lugar-3"></a>
+        <a href="./src/pages/lugares.html"><img src="./src/assets/img/carrusel/carrusel4.png" alt="Lugar-4"></a>
+        <a href="./src/pages/lugares.html"><img src="./src/assets/img/carrusel/carrusel5.png" alt="Lugar-5"></a>
+        <a href="./src/pages/lugares.html"><img src="./src/assets/img/carrusel/carrusel6.png" alt="Lugar-6"></a>
+        <a href="./src/pages/lugares.html"><img src="./src/assets/img/carrusel/carrusel7.png" alt="Lugar-7"></a>
+        <a href="./src/pages/lugares.html"><img src="./src/assets/img/carrusel/carrusel8.png" alt="Lugar-8"></a>
+        </div>
+    </div>
+    </section>
+    
+    <div class="otro-fondo">
+    <section id="nosotros">
+        <h2 class="subtitulos">Nosotros</h2>
+        <p class='parrafo'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo vitae, repudiandae harum dolore hic ex perferendis minima voluptas eius est quam odio corrupti rerum nisi commodi architecto officia magni fugit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nisi eveniet obcaecati explicabo perferendis quia beatae fuga sunt qui, delectus mollitia ipsam autem quisquam praesentium culpa. Voluptatem maxime tempore odio.
+            Non blanditiis a nobis velit voluptatum maiores esse alias excepturi eveniet nihil vero qui incidunt provident porro ex expedita officiis, tempore illum aperiam, rerum placeat error sit. Repellendus, eum laboriosam?
+            Dolor laudantium eius quos reiciendis distinctio voluptas officia, eos id explicabo assumenda atque doloribus possimus reprehenderit sed rerum obcaecati perferendis placeat eum? Atque quaerat vel ab eos quis dolor perferendis.
+            Eveniet impedit fugit repudiandae. Corporis ullam aut dolorem rem totam, nesciunt similique at soluta laborum cum magnam architecto neque quia voluptate in hic obcaecati ipsum! Rem quam explicabo minus obcaecati.
+            Sed natus nobis possimus iste sint odit quisquam, consequatur repudiandae unde pariatur magnam minima et sunt cumque ad! Ullam alias libero, sit similique officia exercitationem fugit nobis quo suscipit nihil?
+            <!-- Dentro del texto verdadero voy a incluir el link (que forma parte del texto) que lleva a la url de destino -->
+            <a href="urlDestino" target="_blank">nombreDestino</a>
+        </p>
+    </section>
+
+    <!-- Sección contacto -->
+    <section id="contacto">
+        <h2 class="subtitulos">Contacto</h2>
+        
+        <div class="contenedor-enlaces">
+        <!-- Direccion / Google Maps -->
+            <div class="elemento-enlaces">
+                <a href="urlUbicacion" target="_blank"><img src="./src/assets/img/icons/icon1.png" alt="iconoDirreccion" width="60px" height="60px"></a>
+                <a href="urlUbicacion" target="_blank"><p>Direccion</p></a>
+            </div>
+
+        <!-- Correo / Mail To -->
+            <div class="elemento-enlaces">
+                <a href="mailto:empresa@empresa.com"><img src="./src/assets/img/icons/icon2.png" alt="iconoCorreo" width="60px" height="60px"></a>
+                <a href="mailto:empresa@empresa.com"><p>direccionCorreo</p></a>
+            </div>
+
+        <!-- Telefonos / link wpp --><!--Obviamente el número es ficticio-->
+            <div class="elemento-enlaces">    
+                <a href="https:/wa.me/59899123456"><img src="./src/assets/img/icons/icon3.png" alt="iconoWpp" width="60px" height="60px"></a>
+                <p>numTelefonoFijo</p>
+            </div>
+    </div>
+</div>
+    </section>
+</div>
+
+    <footer class="grid-item grid-tres">
+        <div class="menu">
+        <section class="redes">
+        <!-- Redes -->    
+        <div class="contiene-redes">
+        <h3>Seguinos</h3>    
+        <!-- IG usuario -->
+        <a href="https://instagram.com/idUsuario" target="_blank">  
+            <img src="./src/assets/img/icons/iconoIG.png" alt="iconoIG" width="25px" height="25px"></a>
+        
+        <!-- FB usuario -->        
+        <a href="https://facebook.com/idUsuario" target="_blank">   
+            <img src="./src/assets/img/icons/iconoFB.png" alt="iconoFB" width="25px" height="25px"></a>
+            
+        <!-- YT usuario -->
+        <a href="https://youtube.com/idUsuario" target="_blank">    
+            <img src="./src/assets/img/icons/iconoYT.png" alt="iconoYT" width="25px" height="25px"></a>
+        </div>
+        </section>
+
+        <section id='nav-inferior'>
+            <nav>
+                <ul class='lista-inferior'>
+                    <li class="elemento-li"><a href="/index.html">Inicio</a></li>
+                    <li class="elemento-li"><a href="./src/pages/lugares.html">Lugares</a></li>
+                    <li class="elemento-li"><a href="#nosotros">Nosotros</a></li>
+                    <li class="elemento-li"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>   
+    </div>             
+    </footer>
+
+</body>
+</html>

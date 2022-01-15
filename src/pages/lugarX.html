@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="../../style.css">
+
+<!-- Google Fonts --> 
+    <!-- Titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Por algún motivo no puedo llamarlas desde el css con el @import, por el momento lo 
+    voy a dejar por este medio, que sé que no es el más óptimo-->
+
+
+    <title>Lugar X</title>
+</head>
+<body class="grid-container">
+    <header class="grid-item grid-uno">
+        <div class="menu">
+            <a href="../../index.html"><img src="../../src/assets/img/logo.png" alt="Logo" width="50px" height="50px" class="logo"></a>
+            <nav>
+                <ul class="lista-superior">
+                    <li class="elemento-li"><a href="../../src/pages/lugares.html">Lugares</a></li>
+                    <li class="elemento-li"><a href="../../index.html#nosotros">Nosotros</a></li>
+                    <li class="elemento-li"><a href="../../index.html#contacto">Contacto</a></li>
+                    <!-- Quería que me llevara a la zona específica de 'nosotros' del index.html, pero no funcionó, tal vez me
+                    falta algo, o simplemente no se puede por alguna limitación del lenguaje -->
+                </ul>
+            </nav> 
+        </div>
+    </header>
+
+    <div class="grid-item grid-dos">
+            <section>
+                
+                
+                <h2 class="subtitulos">Nombre Lugar X</h2>
+                
+
+                <div class="contenedor-secundario">
+                    <div class="img-hija">
+                        <img src="../assets/img/imgLugarX.jpg" alt="Imagen Lugar X" class="img">
+                    </div>
+                    <div class="texto-hijo">
+                        <p class="parrafo"><b>Informacion lugar X</b>, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo amet perferendis nam? Explicabo repudiandae minus unde totam doloremque dignissimos quas aliquid ex veniam recusandae, veritatis maiores obcaecati consequatur nisi.
+                    Illum eaque aspernatur necessitatibus, quisquam ipsum vitae in eos dicta explicabo repellendus, magnam esse corrupti beatae quo! Voluptatibus, dolorem. Sed fugit quam molestias blanditiis nihil, nulla explicabo quaerat vitae quis.
+                    Facere reprehenderit quisquam, voluptates, dolore commodi consequuntur est architecto atque esse temporibus eaque maxime distinctio laudantium. Nostrum ex recusandae, eos sapiente accusamus iure quod fugit consequatur hic dolore voluptatem voluptates!
+                    Excepturi assumenda ipsa rerum maxime, blanditiis possimus eius! Id deserunt illo, blanditiis vero pariatur sequi qui ipsa, aut fugiat vitae perferendis minima enim quisquam, consectetur dignissimos sunt! Assumenda, odio ab.</p>
+                    </div>
+                </div>    
+            </section>
+
+            <section class="otro-fondo">
+                <h2 class="subtitulos">Servicios</h2>
+
+                <div class="contenedor-enlaces">
+
+                    <div class="elemento-enlaces">
+                        <a href="../pages/actividades.html"><img src="../assets/img/icons/iconoActividades.png" alt="Actividades" width="60px" height="60px"></a>
+                        <p>Actividades</p>
+                    </div>
+                    <div class="elemento-enlaces">
+                        <a href="https://"><img src="../assets/img/icons/iconoComida.png" alt="Comida" width="60px" height="60px"></a> 
+                        <!-- La idea es que lleve a un link externo donde haya informacion de la gastronomia
+                            de la zona, como puede ser TripAdvisor o similar -->
+                        <p>Comida</p>
+                    </div>
+                    <div class="elemento-enlaces">
+                        <a href="https://"><img src="../assets/img/icons/iconoHospedaje.png" alt="Hospedaje" width="60px" height="60px"></a>
+                        <p>Hospedaje</p>
+                    </div>
+                <!-- La idea es que lleve a un link externo donde haya informacion del hospedaje de la zona, como puede ser Booking, AirBnb o similar-->
+                </div>        
+            </section>
+            <section>
+                <h2 class="subtitulos">¿Cómo llegar?</h2>
+
+                <div class="contenedor-inyectado">
+                    <iframe src="https://maps.google.com" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <!-- Mapa de la zona del Lugar X en cuestion -->
+            </section>
+        </div>
+
+    <footer class="grid-item grid-tres">
+        <div class="menu">
+        <section class="redes">
+            <!-- Redes -->    
+            <div class="contiene-redes">
+            <h3>Seguinos</h3>    
+            <!-- IG usuario -->
+            <a href="https://instagram.com/idUsuario" target="_blank">  
+                <img src="../assets/img/icons/iconoIG.png" alt="iconoIG" width="25px" height="25px"></a>
+            
+            <!-- FB usuario -->        
+            <a href="https://facebook.com/idUsuario" target="_blank">   
+                <img src="../assets/img/icons/iconoFB.png" alt="iconoFB" width="25px" height="25px"></a>
+                
+            <!-- YT usuario -->
+            <a href="https://youtube.com/idUsuario" target="_blank">    
+                <img src="../assets/img/icons/iconoYT.png" alt="iconoYT" width="25px" height="25px"></a>
+            </div>
+            </section>
+            <section id='nav-inferior'>
+                <nav>
+                    <ul class='lista-inferior'>
+                        <li class="elemento-li"><a href="../../index.html">Inicio</a></li>
+                        <li class="elemento-li"><a href="../pages/lugares.html">Lugares</a></li>
+                        <li class="elemento-li"><a href="../../index.html#nosotros">Nosotros</a></li>
+                        <li class="elemento-li"><a href="../../index.html#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>       
+        </section>      
+    </div>          
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link rel="stylesheet" href="../../style.css">
+
+<!-- Google Fonts --> 
+    <!-- Titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Por algún motivo no puedo llamarlas desde el css con el @import, por el momento lo 
+    voy a dejar por este medio, que sé que no es el más óptimo-->
+
+    <title>Actividad</title>
+</head>
+<body class="grid-container">
+    <header class="grid-item grid-uno">
+        <div class="menu">
+        <a href="../../index.html"><img src="../../src/assets/img/logo.png" alt="Logo" width="50px" height="50px" class="logo"></a>
+        <nav>
+            <ul class="lista-superior">
+                <li class="elemento-li"><a href="../../src/pages/lugares.html">Lugares</a></li>
+                <li class="elemento-li"><a href="../../index.html#nosotros">Nosotros</a></li>
+                <li class="elemento-li"><a href="../../index.html#contacto">Contacto</a></li>
+                <!-- Quería que me llevara a la zona específica de 'nosotros' del index.html, pero no funcionó, tal vez me
+                falta algo, o simplemente no se puede por alguna limitación del lenguaje -->
+            </ul>
+        </nav> 
+    </div>
+    </header>
+
+    <div class="grid-item grid-dos">
+    <section>
+
+        <h2 class="subtitulos">Nombre Actividad X</h2>
+
+        <div class="contenedor-secundario">
+            <div class="img-hija">
+                <img src="../assets/img/imgActividadX.png" alt="Imagen Actividad X">
+            </div>
+            <div class="texto-hijo">
+                <p class="parrafo"><b> Actividad X</b>, Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, inventore, vel sequi facilis voluptatum tempore iusto amet, in quaerat fugiat impedit aut excepturi ab possimus hic. Voluptates excepturi nihil minima?
+                Aspernatur, excepturi officia. Rerum architecto illum doloremque cum. Voluptates a fuga dolorem accusamus placeat aliquam non autem fugit perferendis similique voluptas tempore incidunt veritatis nobis neque, omnis nihil, aut repellat!
+                Ex enim architecto vitae hic pariatur ipsa repudiandae blanditiis quas magni dolorem? Magni nisi dolore repudiandae non ipsam corporis autem deserunt fugit. Eius minus vitae incidunt doloribus soluta mollitia ullam!
+                Earum id illo dignissimos alias nemo labore voluptate laboriosam nisi vel, ducimus ex quaerat provident repudiandae vero! Dolorum aliquid esse ea architecto! Est, veritatis odit. Deserunt nostrum aspernatur quasi tenetur.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="otro-fondo">
+        <p class="subtitulos">Servicios</p>
+        <div class="contenedor-enlaces">
+            <div class="elemento-enlaces">
+                <a href="Portal de guías"><img src="../assets/img/icons/iconoGuia.png" alt="Icono Guía" width="60px" height="60px"></a>
+            
+            <!-- La idea a futuro es hacer una página dónde los guías de la zona puedan
+            ofrecer sus servicios. Esto es importante debido a que no es sencillo
+            conseguir uno, y es sumamente necesario en áreas como estas
+            que son protegidas por un plan nacional. En este caso no armé esa página aún -->
+            <p>Contactar Guía</p>
+        </div>
+        </div>
+    </section>
+
+
+    <div class="contenedor-formulario">
+        <section>
+            <div id="reviews">
+            <h3>Reseñas y comentarios</h3>
+            <textarea name="comentarios" id="comentarios" cols="45" rows="25">Dejanos tu comentario</textarea>
+        </div>
+            <!-- Investigando encontré que este tipo de cosas se hace así, pero obviamente está incompleto -->
+        </section>
+        
+        <section>
+            <div class="map-actividad">
+            <iframe src="https://maps.google.com" frameborder="0" width="420px" height="400px"></iframe>
+        </div>
+            <!-- Mapa del lugar dónde se desarrolla la Actividad X -->
+        </section>
+    </div>
+    </div>
+
+
+    <footer class="grid-item grid-tres">
+        <div class="menu">
+        <section class="redes">
+            <!-- Redes -->    
+            <div class="contiene-redes">
+            <h3>Seguinos</h3>    
+            <!-- IG usuario -->
+            <a href="https://instagram.com/idUsuario" target="_blank">  
+                <img src="../assets/img/icons/iconoIG.png" alt="iconoIG" width="25px" height="25px"></a>
+            
+            <!-- FB usuario -->        
+            <a href="https://facebook.com/idUsuario" target="_blank">   
+                <img src="../assets/img/icons/iconoFB.png" alt="iconoFB" width="25px" height="25px"></a>
+                
+            <!-- YT usuario -->
+            <a href="https://youtube.com/idUsuario" target="_blank">    
+                <img src="../assets/img/icons/iconoYT.png" alt="iconoYT" width="25px" height="25px"></a>
+            </div>
+            </section>
+            <section id='nav-inferior'>
+                <nav>
+                    <ul class='lista-inferior'>
+                        <li class="elemento-li"><a href="../../index.html">Inicio</a></li>
+                        <li class="elemento-li"><a href="../pages/lugares.html">Lugares</a></li>
+                        <li class="elemento-li"><a href="../../index.html#nosotros">Nosotros</a></li>
+                        <li class="elemento-li"><a href="../../index.html#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>       
+        </section> 
+    </div>               
+    </footer>
+
+    
+
+</body>
+</html>

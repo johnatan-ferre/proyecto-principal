@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts Google */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@400;600&display=swap');
+
+/* Usé un @import acá y un link en el archivo html para usar las dos formas */
+
+/* body */
+body {
+    background-color: #B9F4C9;
+}
+.otro-fondo {
+    background-color: azure;
+}
+
+
+.menu {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: .5em auto;
+}
+
+.logo {
+    width: 3.125em;
+    height: 3.125em;
+}
+
+.lista-superior, .lista-inferior {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+
+
+.elemento-li {
+    list-style-type: none;
+    width: 8em;
+    background-color: #B9F4C9;
+    text-align: center;
+}
+
+.elemento-li a {
+    text-decoration: none;
+    line-height: 3.125em;
+    display: block;
+    background-color: #B9F4C9;
+    color: #3F913B;
+}
+
+.elemento-li a:hover{
+    background-color: #3F913B;
+    color: white;
+}
+
+/* video */
+.video {
+    display: block;
+    margin: auto;
+}
+/* fin video */
+
+
+/* Textos */
+.subtitulos{ 
+    margin: .5em auto;
+    text-align: center;
+    font-size: 2.125em;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+    color: #3F913B;
+}
+
+.parrafo {
+    color: #433E3F;
+    font-size: 1.25em;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    margin: .5em auto;
+    line-height: 1.4em;
+    word-spacing: 0.06em;
+    width: 78%;
+}
+
+.contenedor-enlaces {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: .5em auto;
+    text-align: center;
+}
+.contenedor-enlaces a, p{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* carrusel */
+.carrusel {
+    background-color: azure;
+    width: 80%;
+    height: 13.75em;
+    margin: .5em auto;
+    outline: 3px dotted #433E3F;
+}
+
+.texto-carrusel  {
+    margin: auto;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    
+}
+/* fin carrusel */
+
+
+#nosotros {
+    margin-top: 8em;
+}
+#contacto {
+    margin-top: 8em;
+}
+/* footer */
+/* Redes */
+.redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contiene-redes {
+    padding: .5em 1.5em;
+}
+
+.contiene-redes h3 {
+    text-align: center;
+    margin: .5em .75em;
+    color:#433E3F;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contiene-redes a img {
+    margin: 0 .5em;
+}
+/* Fin redes */
+/* Fin footer */
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+    'header'
+    'centro'
+    'footer';
+}
+
+
+.grid-uno {
+    grid-area: header;
+}
+.grid-dos {
+    grid-area: centro;
+}
+.grid-tres {
+    grid-area: footer;
+}
+
+/* Pagina Lugares */
+.doble-contenedor {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        margin: auto;
+        grid-template-areas:
+        'a b'
+        'c d'
+        'e f'
+        'g h';
+}
+.contenedor-lugar {
+    position: relative;
+}
+/* prueba img */
+.img-1 {
+    width: 100%;
+}
+.img-title {
+    position: absolute;
+    bottom: 0;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,1));
+    width: 100%;
+}
+/* fin prueba imagen */
+.lugar-uno {
+    grid-area: a;
+}
+.lugar-dos {
+    grid-area: b;
+}
+.lugar-tres {
+    grid-area: c;
+}
+.lugar-cuatro {
+    grid-area: d;
+}
+.lugar-cinco {
+    grid-area: e;
+}
+.lugar-seis {
+    grid-area: f;
+}
+.lugar-siete {
+    grid-area: g;
+}
+.lugar-ocho {
+    grid-area: h;
+}
+
+.contenedor-lugar {
+    justify-content: center;
+    align-items: center;
+}
+/*  Fin pagina lugares */
+
+.contenedor-secundario {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+.texto-hijo {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.img-hija {
+    margin: auto;
+}
+
+.contenedor-inyectado {
+    width: 80%;
+    margin: auto;
+}
+
+.video-inyectado iframe {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.video-actividad {
+
+    margin: auto;
+}
+
+.contenedor-formulario {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+
+
+
+/* Media Queries */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-superior, .lista-inferior {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .video {
+        display: none;
+    }
+    .parrafo {
+        color: #433E3F;
+        font-size: 1.1em;
+        text-align: justify;
+        font-family: 'Nunito', sans-serif;
+        margin: .5em auto;
+        line-height: 1.2em;
+        word-spacing: 0.05em;
+        width: 85%;
+    }
+
+    .doble-contenedor {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-row-gap: 1em;
+        margin: auto;
+        grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h';
+    }
+
+    
+    .contenedor-secundario {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-formulario {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    .map-actividad {
+        margin-top: 1em;
+    }
+
+    .elemento-enlaces p {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-superior, .lista-inferior {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .video {
+        display: none;
+    }
+    .lista-inferior {
+        display: none;
+    }
+    .parrafo {
+        color: #433E3F;
+        font-size: 1em;
+        text-align: justify;
+        font-family: 'Nunito', sans-serif;
+        margin: .5em auto;
+        line-height: 1.2em;
+        word-spacing: 0.05em;
+        width: 90%;
+    }
+
+    .doble-contenedor {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-row-gap: 1em;
+        margin: auto;
+        grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h';
+    }
+
+    .contenedor-secundario {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-inyectado {
+        display: none;
+    }
+
+    .contenedor-formulario {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    .map-actividad {
+        margin-top: 1em;
+    }
+    .elemento-enlaces p {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 1750px){
+    .contenedor-secundario {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+

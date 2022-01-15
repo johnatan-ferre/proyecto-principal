@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../style.css">
+
+    <!-- Google Fonts --> 
+    <!-- Titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Por algún motivo no puedo llamarlas desde el css con el @import, por el momento lo 
+    voy a dejar por este medio, que sé que no es el más óptimo-->
+
+    <title>Actividades</title>
+</head>
+<body class="grid-container">
+    <header class="grid-item grid-uno">
+    <div class="menu"> 
+        <a href="../../index.html"><img src="../../src/assets/img/logo.png" alt="Logo" width="50px" height="50px" class="logo"></a>
+        <nav>
+            <ul class="lista-superior">
+                <li class="elemento-li"><a href="../../src/pages/lugares.html">Lugares</a></li>
+                <li class="elemento-li"><a href="../../index.html#nosotros">Nosotros</a></li>
+                <li class="elemento-li"><a href="../../index.html#contacto">Contacto</a></li>
+                <!-- Quería que me llevara a la zona específica de 'nosotros' del index.html, pero no funcionó, tal vez me
+                falta algo, o simplemente no se puede por alguna limitación del lenguaje -->
+            </ul>
+        </nav> 
+    </div>   
+    </header>
+
+    <div class="grid-item grid-dos">
+    <section>
+        <h1 class="subtitulos">¿Qué puedo hacer?</h1>
+        <div class="carrusel">
+            <!-- Carrusel actividades-->
+            <div class="texto-carrusel">
+                <a href="./actividadX.html"><img src="../assets/img/actividades/actividad1.png" alt="Actividad 1"></a>
+                <a href="./actividadX.html"><img src="../assets/img/actividades/actividad2.png" alt="Actividad 2"></a>
+                <a href="./actividadX.html"><img src="../assets/img/actividades/actividad3.png" alt="Actividad 3"></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="video-inyectado">
+            <iframe width="80%" height="450px"
+            src="https://youtube.com/" frameborder="0">
+            <!-- URL del video colgado en YT, en el canal del usuario-->
+            </iframe>
+        </div>
+    </div>
+    </section>
+
+    <footer class="grid-item grid-tres">
+        <div class="menu">
+        <section class="redes">
+            <!-- Redes -->    
+            <div class="contiene-redes">
+            <h3>Seguinos</h3>    
+            <!-- IG usuario -->
+            <a href="https://instagram.com/idUsuario" target="_blank">  
+                <img src="../assets/img/icons/iconoIG.png" alt="iconoIG" width="25px" height="25px"></a>
+            
+            <!-- FB usuario -->        
+            <a href="https://facebook.com/idUsuario" target="_blank">   
+                <img src="../assets/img/icons/iconoFB.png" alt="iconoFB" width="25px" height="25px"></a>
+                
+            <!-- YT usuario -->
+            <a href="https://youtube.com/idUsuario" target="_blank">    
+                <img src="../assets/img/icons/iconoYT.png" alt="iconoYT" width="25px" height="25px"></a>
+            </div>
+            </section>
+            <section id='nav-inferior'>
+                <nav>
+                    <ul class='lista-inferior'>
+                        <li class="elemento-li"><a href="../../index.html">Inicio</a></li>
+                        <li class="elemento-li"><a href="../pages/lugares.html">Lugares</a></li>
+                        <li class="elemento-li"><a href="../../index.html#nosotros">Nosotros</a></li>
+                        <li class="elemento-li"><a href="../../index.html#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>       
+        </section> 
+    </div>               
+    </footer>
+    
+</body>
+</html>
